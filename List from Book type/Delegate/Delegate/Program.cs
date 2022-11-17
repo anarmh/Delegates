@@ -14,6 +14,7 @@ namespace Delegate
             list.Add(new Book{ Name = "Ferhad ve sirin", Author="Fuzuli" });
             list.Add(new Book { Name = "Shikayetname", Author="Fuzuli" });
 
+           
             ShowBookAuthor(CheckBookAuthor, list);
             
         }
@@ -33,8 +34,13 @@ namespace Delegate
                 {
                     count++;
                 }
+                else
+                {
+                    Console.WriteLine($"{item.Name} {item.Author}");
+                }
+
             }
-            Console.WriteLine(count);
+            Console.WriteLine("Authoru Nizami olanlarin sayi: "+" "+count);
         }
     }
 }
